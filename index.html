@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>ShopEasy - E-Commerce</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">ShopEasy</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cart">
+            🛒 Cart: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to ShopEasy!</h1>
+            <p>Discover amazing products at great prices.</p>
+            <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img
+                    src="https://placehold.co/300x200?text=Headphones"
+                    alt="Headphones">
+
+                <h3>Headphones</h3>
+                <p>Price: ₹999</p>
+
+                <button onclick="addToCart('Headphones', 999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://placehold.co/300x200?text=Smart+Watch"
+                    alt="Smart Watch">
+
+                <h3>Smart Watch</h3>
+                <p>Price: ₹1499</p>
+
+                <button onclick="addToCart('Smart Watch', 1499)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://placehold.co/300x200?text=Shoes"
+                    alt="Shoes">
+
+                <h3>Running Shoes</h3>
+                <p>Price: ₹1999</p>
+
+                <button onclick="addToCart('Running Shoes', 1999)">
+                    Add to Cart
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://placehold.co/300x200?text=Backpack"
+                    alt="Backpack">
+
+                <h3>Backpack</h3>
+                <p>Price: ₹799</p>
+
+                <button onclick="addToCart('Backpack', 799)">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            ShopEasy is an e-commerce UI project created using
+            HTML, CSS and JavaScript. Explore products and
+            try the shopping cart.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@shopeasy.example</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ShopEasy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
